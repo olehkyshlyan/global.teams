@@ -1,0 +1,49 @@
+#line2
+{
+	position: relative;
+	width: 1000px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	//background-color: green;
+}
+
+#line2:before
+{
+	content: '\200B';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#ln2TxtWrap
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#ln2-firstTxtLine
+{
+	vertical-align: middle;
+	font-size: 20px;
+	color: rgb(255,255,240);  /* color Ivory */
+}
+
+#ln2-secondTxtLine
+{
+	//display: inline-block;
+	margin-top: 10px;
+	vertical-align: middle;
+	font-size: 12px;
+	color: rgb(255,255,240);  /* color Ivory */
+}
+
+#ln2-thirdTxtLine
+{
+	margin-top: 10px;
+	vertical-align: middle;
+	font-size: 14px;
+	font-weight: bold;
+	color: rgb(255,255,240);  /* color Ivory */
+}
