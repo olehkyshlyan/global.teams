@@ -1,0 +1,211 @@
+#line4
+{
+	position: relative;
+	width: 1000px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	//margin-top: 5px;
+	//background-color: rgb(128,0,128); /* color Purple */
+	background-color: rgb(255,255,240);  /* color Ivory */
+	border-radius: 5px;
+}
+
+#ln4-firstTxtSection
+{
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	background-color: rgb(0,128,128); /* color Teal */
+}
+
+#ln4-1stSecNotice
+{
+	position: absolute;
+	z-index: 1;
+	height: 20px;
+	left: -10px;
+	top: -10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: rgb(0,255,0); /* color Green */
+}
+
+#ln4-1stSecNotice:before
+{
+	content: '\200B';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#ln4-1stSecNotice span
+{
+	vertical-align: middle;
+}
+
+#ln4-1stSecNtc-firstGeometryFigure
+{
+	position: absolute;
+	z-index: 0;
+	left: 0px;
+	top: 20px;
+	width: 0;
+	height:0;
+	border-top: 0px solid transparent;
+	border-right: 10px solid rgb(191,99,0);
+	border-bottom: 10px solid transparent;
+}
+
+#ln4-1stSecNtc-secondGeometryFigure
+{
+	position: absolute;
+	top: 0px;
+	right: -10px;
+	width: 0;
+	height: 0;
+	border-right: 10px solid transparent;
+	border-top: 10px solid rgb(0,255,0); /* color Green */
+	border-left: 0px solid rgb(0,255,0); /* color Green */
+	border-bottom: 10px solid rgb(0,255,0); /* color Green */
+}
+
+#ln4-secondTxtSection
+{
+	display: inline-block;
+	width: 25%;
+	height: 100%;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: middle;
+	//background-color: rgb(255,239,213); /* color PapayaWhip */
+}
+
+#ln4-secondTxtSection:before
+{
+	content: '\200B';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#ln4-2ndSecLinesWrapper
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#ln4-2ndSecAmount
+{
+	margin-top: 3px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#ln4-2ndSecAmount + div
+{
+	margin-top: 3px;
+}
+
+#ln4-2ndSecAmount + div + div
+{
+	margin-top: 3px;
+}
+
+#ln4-thirdTxtSection
+{
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	//background-color: rgb(100,149,237); /* color CornflowerBlue */
+}
+
+#ln4-thirdTxtSection:before
+{
+	content: '\200B';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#ln4-3rdSecLinesWrapper
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#ln4-3rdSecStarsWrapper
+{
+	margin-top: 5px;
+}
+
+#ln4-3rdSecStarsWrapper span:not(:first-child)
+{
+	margin-left: 2px;
+}
+
+#ln4-fourthTxtSection
+{
+	display: inline-block;
+	width: 15%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	//background-color: rgb(255,239,213); /* color PapayaWhip */
+}
+
+#ln4-fourthTxtSection:before
+{
+	content: '\200B';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#ln4-4thSecRating
+{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#ln4-fifthTxtSection
+{
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	//background-color: rgb(100,149,237); /* color CornflowerBlue */
+}
+
+#ln4-fifthTxtSection:before
+{
+	content: '\200B';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#ln4-5thSecInputWrapper
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#ln4-5thSecInputWrapper input
+{
+	width: 100px;
+	height: 30px;
+	color: rgb(255,255,240);  /* color Ivory */
+	background-color: rgb(0,219,0); /* color Green */
+	border: none;
+	border-radius: 5px;
+}
