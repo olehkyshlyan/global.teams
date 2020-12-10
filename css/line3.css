@@ -1,0 +1,119 @@
+#line3
+{
+	position: relative;
+	width: 1000px;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(128,128,0); /* color Olive */
+}
+
+#ln3-firstTxtSection
+{
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	color: rgb(255,255,240);  /* color Ivory */
+	//background-color: rgb(255,0,255);
+	background-color: rgb(29,29,29);
+}
+
+#ln3-firstTxtSection:before
+{
+	content: '\200B';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#ln3-secondTxtSection
+{
+	display: inline-block;
+	width: 25%;
+	height: 100%;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	color: rgb(255,255,240);  /* color Ivory */
+	//background-color: rgb(0,128,128); /* color Teal */
+	background-color: rgb(29,29,29);
+}
+
+#ln3-secondTxtSection:before
+{
+	content: '\200B';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#ln3-thirdTxtSection
+{
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	color: rgb(255,255,240);  /* color Ivory */
+	//background-color: rgb(255,239,213); /* color PapayaWhip */
+	background-color: rgb(29,29,29);
+}
+
+#ln3-thirdTxtSection:before
+{
+	content: '\200B';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#ln3-fourthTxtSection
+{
+	display: inline-block;
+	width: 15%;
+	height: 100%;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	color: rgb(255,255,240);  /* color Ivory */
+	//background-color: rgb(105,105,105); /* color DimGrey */
+	background-color: rgb(29,29,29);
+}
+
+#ln3-fourthTxtSection:before
+{
+	content: '\200B';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#ln3-fifthTxtSection
+{
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	color: rgb(255,255,240);  /* color Ivory */
+	//background-color: rgb(0,128,128); /* color Teal */
+	background-color: rgb(29,29,29);
+}
+
+#ln3-fifthTxtSection:before
+{
+	content: '\200B';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
