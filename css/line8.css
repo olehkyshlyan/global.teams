@@ -1,0 +1,153 @@
+#line8
+{
+	position: relative;
+	width: 1000px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	//margin-bottom: 15px;
+	//background-color: rgb(100,149,237); /* color CornflowerBlue */
+	background-color: rgb(255,255,240);  /* color Ivory */
+	border-radius: 5px;
+}
+
+#ln8-firstTxtSection
+{
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	background-color: rgb(0,128,128); /* color Teal */
+}
+
+#ln8-secondTxtSection
+{
+	display: inline-block;
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	//background-color: rgb(255,239,213); /* color PapayaWhip */
+}
+
+#ln8-secondTxtSection:before
+{
+	content: '\200B';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#ln8-2ndSecLinesWrapper
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#ln8-2ndSecAmount
+{
+	margin-top: 3px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#ln8-2ndSecAmount + div
+{
+	margin-top: 3px;
+}
+
+#ln8-thirdTxtSection
+{
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	//background-color: rgb(100,149,237); /* color CornflowerBlue */
+}
+
+#ln8-thirdTxtSection:before
+{
+	content: '\200B';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#ln8-3rdSecLinesWrapper
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#ln8-3rdSecStarsWrapper
+{
+	margin-top: 5px;
+}
+
+#ln8-3rdSecStarsWrapper span:not(:first-child)
+{
+	margin-left: 2px;
+}
+
+#ln8-fourthTxtSection
+{
+	display: inline-block;
+	width: 15%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	//background-color: rgb(255,239,213); /* color PapayaWhip */
+}
+
+#ln8-fourthTxtSection:before
+{
+	content: '\200B';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#ln8-4thSecRating
+{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#ln8-fifthTxtSection
+{
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	//background-color: rgb(100,149,237); /* color CornflowerBlue */
+}
+
+#ln8-fifthTxtSection:before
+{
+	content: '\200B';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#ln8-5thSecInputWrapper
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#ln8-5thSecInputWrapper input
+{
+	width: 100px;
+	height: 30px;
+	color: rgb(255,255,240);  /* color Ivory */
+	background-color: rgb(0,219,0); /* color Green */
+	border: none;
+	border-radius: 5px;
+}
