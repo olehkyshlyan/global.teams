@@ -6,7 +6,6 @@
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	//background-color: green;
 }
 
 #line2:before
@@ -32,7 +31,6 @@
 
 #ln2-secondTxtLine
 {
-	//display: inline-block;
 	margin-top: 10px;
 	vertical-align: middle;
 	font-size: 12px;
