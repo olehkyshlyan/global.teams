@@ -2,23 +2,42 @@
 {
 	position: relative;
 	width: 1000px;
-	height: 100px;
+	height: 80px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
-	//background-color: rgb(255,239,213); /* color PapayaWhip */
 	background-color: rgb(255,255,240);  /* color Ivory */
 	border-radius: 5px;
 }
 
 #ln6-firstTxtSection
 {
+	position: relative;
 	display: inline-block;
 	width: 20%;
 	height: 100%;
 	text-align: center;
 	vertical-align: middle;
-	background-color: rgb(0,128,128); /* color Teal */
+	background-color: rgb(214,227,226);
+}
+
+#ln6-1stSecLogo
+{
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+
+#ln6-1stSecLogo img
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-width: 80%;
+	max-height: 80%;
+  transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 }
 
 #ln6-1stSecNotice
@@ -74,6 +93,53 @@
 	border-bottom: 10px solid rgb(0,255,0); /* color Green */
 }
 
+#ln6-1stSec-firstArrow
+{
+	position: absolute;
+	top: 0px;
+	right: -10px;
+	width: 0;
+	height: 0;
+	border-top: 40px solid transparent;
+	border-left: 10px solid rgb(214,227,226);
+	border-bottom: 40px solid transparent;
+}
+
+#ln6-1stSec-secondArrowContainer
+{
+	position: absolute;
+	z-index: 2;
+	top: 0px;
+	right: -18px;
+	height: 100%;
+	width: 30px;
+	overflow: hidden;
+}
+
+#ln6-1stSec-secondTopArrow
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 20px;
+	height: 45px;
+	border-right: 5px solid rgb(214,227,226);
+	border-radius: 2px;
+	transform: rotate(-14deg);
+}
+
+#ln6-1stSec-secondBottomArrow
+{
+	position: absolute;
+	top: 35px;
+	left: 0px;
+	width: 20px;
+	height: 45px;
+	border-right: 5px solid rgb(214,227,226);
+	border-radius: 2px;
+	transform: rotate(14deg);
+}
+
 #ln6-secondTxtSection
 {
 	display: inline-block;
@@ -81,7 +147,6 @@
 	height: 100%;
 	text-align: center;
 	vertical-align: middle;
-	//background-color: rgb(255,239,213); /* color PapayaWhip */
 }
 
 #ln6-secondTxtSection:before
@@ -100,14 +165,14 @@
 
 #ln6-2ndSecAmount
 {
-	margin-top: 3px;
+	margin-top: 1px;
 	font-size: 20px;
 	font-weight: bold;
 }
 
 #ln6-2ndSecAmount + div
 {
-	margin-top: 3px;
+	margin-top: 1px;
 }
 
 #ln6-thirdTxtSection
@@ -117,7 +182,6 @@
 	height: 100%;
 	text-align: center;
 	vertical-align: middle;
-	//background-color: rgb(100,149,237); /* color CornflowerBlue */
 }
 
 #ln6-thirdTxtSection:before
@@ -129,6 +193,26 @@
 }
 
 #ln6-3rdSecLinesWrapper
+{
+	display: inline-block;
+	width: 100%;
+	height: 80%;
+	border-left: 1px solid rgb(232,232,232);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	vertical-align: middle;
+}
+
+#ln6-3rdSecLinesWrapper:before
+{
+	content: '\200B';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#ln6-3rdSecLines
 {
 	display: inline-block;
 	vertical-align: middle;
@@ -151,7 +235,6 @@
 	height: 100%;
 	text-align: center;
 	vertical-align: middle;
-	//background-color: rgb(255,239,213); /* color PapayaWhip */
 }
 
 #ln6-fourthTxtSection:before
@@ -165,9 +248,23 @@
 #ln6-4thSecRating
 {
 	display: inline-block;
+	width: 100%;
+	height: 80%;
+	border-left: 1px solid rgb(232,232,232);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	vertical-align: middle;
 	font-size: 28px;
 	font-weight: bold;
+}
+
+#ln6-4thSecRating:before
+{
+	content: '\200B';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
 }
 
 #ln6-fifthTxtSection
@@ -177,7 +274,6 @@
 	height: 100%;
 	text-align: center;
 	vertical-align: middle;
-	//background-color: rgb(100,149,237); /* color CornflowerBlue */
 }
 
 #ln6-fifthTxtSection:before
@@ -191,6 +287,20 @@
 #ln6-5thSecInputWrapper
 {
 	display: inline-block;
+	width: 100%;
+	height: 80%;
+	border-left: 1px solid rgb(232,232,232);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	vertical-align: middle;
+}
+
+#ln6-5thSecInputWrapper:before
+{
+	content: '\200B';
+	display: inline-block;
+	height: 100%;
 	vertical-align: middle;
 }
 
@@ -202,4 +312,5 @@
 	background-color: rgb(0,219,0); /* color Green */
 	border: none;
 	border-radius: 5px;
+	cursor: pointer;
 }
