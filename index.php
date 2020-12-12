@@ -51,9 +51,3 @@ include_once "classes/line8.php";
 </body>
 
 </html>
-
-<!--
-
-
-
--->
