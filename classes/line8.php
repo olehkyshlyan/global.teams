@@ -18,7 +18,13 @@ class Line8{
 	}
 	
 	private function creatingFirstTxtSection(){
-		self::$firstTxtSection = '<div id="ln8-firstTxtSection"><span></span></div>';
+		$logo = '<div id="ln8-1stSecLogo"><span><img src="img/casumo.png" /></span></div>';
+		$firstArrow = '<div id="ln8-1stSec-firstArrow"></div>';
+		$secondArrow = '<div id="ln8-1stSec-secondArrowContainer">';
+		$secondArrow .= '<div id="ln8-1stSec-secondTopArrow"></div>';
+		$secondArrow .= '<div id="ln8-1stSec-secondBottomArrow"></div>';
+		$secondArrow .= '</div>';
+		self::$firstTxtSection = '<div id="ln8-firstTxtSection">'.$logo.$firstArrow.$secondArrow.'</div>';
 	}
 	
 	private function creatingSecondTxtSection(){
@@ -32,6 +38,7 @@ class Line8{
 	
 	private function creatingThirdTxtSection(){
 		$txtLines = '<div id="ln8-3rdSecLinesWrapper">';
+		$txtLines .= '<div id="ln8-3rdSecLines">';
 		$txtLines .= '<div><span>Rating (1816)</span></div>';
 		$txtLines .= '<div id="ln8-3rdSecStarsWrapper">';
 		$txtLines .= '<span><img src="img/star.png" /></span>';
@@ -39,6 +46,7 @@ class Line8{
 		$txtLines .= '<span><img src="img/star.png" /></span>';
 		$txtLines .= '<span><img src="img/star.png" /></span>';
 		$txtLines .= '<span><img src="img/star.png" /></span>';
+		$txtLines .= '</div>';
 		$txtLines .= '</div>';
 		$txtLines .= '</div>';
 		self::$thirdTxtSection = '<div id="ln8-thirdTxtSection">'.$txtLines.'</div>';
@@ -55,7 +63,7 @@ class Line8{
 	}
 	
 	private function creatingLine8(){
-		$cont = '<div id="line8" class="lines">';
+		$cont = '<div id="line8">';
 		$cont .= self::$firstTxtSection;
 		$cont .= self::$secondTxtSection;
 		$cont .= self::$thirdTxtSection;
