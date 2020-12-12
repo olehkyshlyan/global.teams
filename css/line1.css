@@ -2,11 +2,9 @@
 {
 	position: relative;
 	width: 1000px;
-	height: 140px;
+	height: 150px;
 	margin-left: auto;
 	margin-right: auto;
-	//margin-top: 10px;
-	//background-color: rgb(255,0,255);
 }
 
 #line1Logo
@@ -18,5 +16,4 @@
 	top: 50%;
 	margin-left: -140px;
 	margin-top: -41px;
-	//background-color: green;
 }
