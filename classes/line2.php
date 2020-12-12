@@ -29,7 +29,7 @@ class Line2{
 	}
 	
 	private function creatingLine2(){
-		$cont = '<div id="line2" class="lines">';
+		$cont = '<div id="line2">';
 		$cont .= '<div id="ln2TxtWrap">';
 		$cont .= self::$firstTxtLine;
 		$cont .= self::$secondTxtLine;
