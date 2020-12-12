@@ -23,7 +23,13 @@ class Line5{
 		$notice .= '<div id="ln5-1stSecNtc-secondGeometryFigure"></div>';
 		$notice .= '<span>TRENDING</span>';
 		$notice .= '</div>';
-		self::$firstTxtSection = '<div id="ln5-firstTxtSection">'.$notice.'<span></span></div>';
+		$logo = '<div id="ln5-1stSecLogo"><span><img src="img/machance.png" /></span></div>';
+		$firstArrow = '<div id="ln5-1stSec-firstArrow"></div>';
+		$secondArrow = '<div id="ln5-1stSec-secondArrowContainer">';
+		$secondArrow .= '<div id="ln5-1stSec-secondTopArrow"></div>';
+		$secondArrow .= '<div id="ln5-1stSec-secondBottomArrow"></div>';
+		$secondArrow .= '</div>';
+		self::$firstTxtSection = '<div id="ln5-firstTxtSection">'.$notice.$logo.$firstArrow.$secondArrow.'</div>';
 	}
 	
 	private function creatingSecondTxtSection(){
@@ -37,6 +43,7 @@ class Line5{
 	
 	private function creatingThirdTxtSection(){
 		$txtLines = '<div id="ln5-3rdSecLinesWrapper">';
+		$txtLines .= '<div id="ln5-3rdSecLines">';
 		$txtLines .= '<div><span>Rating (2063)</span></div>';
 		$txtLines .= '<div id="ln5-3rdSecStarsWrapper">';
 		$txtLines .= '<span><img src="img/star.png" /></span>';
@@ -44,6 +51,7 @@ class Line5{
 		$txtLines .= '<span><img src="img/star.png" /></span>';
 		$txtLines .= '<span><img src="img/star.png" /></span>';
 		$txtLines .= '<span><img src="img/star.png" /></span>';
+		$txtLines .= '</div>';
 		$txtLines .= '</div>';
 		$txtLines .= '</div>';
 		self::$thirdTxtSection = '<div id="ln5-thirdTxtSection">'.$txtLines.'</div>';
@@ -60,7 +68,7 @@ class Line5{
 	}
 	
 	private function creatingLine5(){
-		$cont = '<div id="line5" class="lines">';
+		$cont = '<div id="line5">';
 		$cont .= self::$firstTxtSection;
 		$cont .= self::$secondTxtSection;
 		$cont .= self::$thirdTxtSection;
