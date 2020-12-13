@@ -20,6 +20,8 @@
 	text-align: center;
 	vertical-align: middle;
 	background-color: rgb(214,227,226);
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 
 #ln8-1stSecLogo
