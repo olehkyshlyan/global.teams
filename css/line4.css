@@ -17,6 +17,8 @@
 	height: 100%;
 	vertical-align: middle;
 	background-color: rgb(160,0,201);
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 
 #ln4-1stSecLogo
