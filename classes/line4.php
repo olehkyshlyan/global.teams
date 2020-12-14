@@ -64,7 +64,7 @@ class Line4{
 	}
 	
 	private function creatingFifthTxtSection(){
-		$txtLine = '<div id="ln4-5thSecInputWrapper"><input id="" type="button" value="Play" /></div>';
+		$txtLine = '<div id="ln4-5thSecInputWrapper"><input id="ln4-5thSecInput" class="ln-5thSecInput" type="button" value="Play" /></div>';
 		self::$fifthTxtSection = '<div id="ln4-fifthTxtSection">'.$txtLine.'</div>';
 	}
 	
