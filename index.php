@@ -40,6 +40,7 @@ include_once "classes/line8.php";
 
 <body>
 
+<div id="wrapper">
 <? print(Line1::$content); ?>
 <? print(Line2::$content); ?>
 <? print(Line3::$content); ?>
@@ -48,6 +49,7 @@ include_once "classes/line8.php";
 <? print(Line6::$content); ?>
 <? print(Line7::$content); ?>
 <? print(Line8::$content); ?>
+</div>
 
 </body>
 
