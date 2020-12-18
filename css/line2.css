@@ -6,27 +6,54 @@
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	font-size: inherit;
 }
 
-#line2:before
-{
-	content: '\200B';
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
+@media (max-width: 980px){
+	#line2{
+		width: 98%;
+		height: 20%;
+	}
 }
 
 #ln2TxtWrap
 {
-	display: inline-block;
-	vertical-align: middle;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	font-size: 12px;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 }
 
 #ln2-firstTxtLine
 {
+	position: relative;
 	vertical-align: middle;
 	font-size: 20px;
 	color: rgb(255,255,240);  /* color Ivory */
+}
+
+@media (max-width: 980px){
+	#ln2-firstTxtLine
+	{
+		position: relative;
+		height: 200px;
+		width: 100%;
+		font-size: 500%;
+		vertical-align: middle;
+	}
+	
+	#ln2-firstTxtLine span
+	{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	}
 }
 
 #ln2-secondTxtLine
@@ -37,6 +64,13 @@
 	color: rgb(255,255,240);  /* color Ivory */
 }
 
+@media (max-width: 980px){
+	#ln2-secondTxtLine
+	{
+		display: none;
+	}
+}
+
 #ln2-thirdTxtLine
 {
 	margin-top: 10px;
@@ -44,4 +78,27 @@
 	font-size: 14px;
 	font-weight: bold;
 	color: rgb(255,255,240);  /* color Ivory */
+}
+
+@media (max-width: 980px){
+	#ln2-thirdTxtLine
+	{
+		position: relative;
+		height: 100px;
+		width: 100%;
+		font-size: 300%;
+		vertical-align: middle;
+		background-color: rgb(29,29,29);
+		opacity: 0.8;
+	}
+	
+	#ln2-thirdTxtLine span
+	{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	}
 }
