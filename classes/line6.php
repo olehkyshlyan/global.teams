@@ -2,6 +2,7 @@
 
 class Line6{
 	public static $content = NULL;
+	private static $notice = NULL;
 	private static $firstTxtSection = NULL;
 	private static $secondTxtSection = NULL;
 	private static $thirdTxtSection = NULL;
@@ -9,6 +10,7 @@ class Line6{
 	private static $fifthTxtSection = NULL;
 	
 	function __construct(){
+		$this->creatingNotice();
 		$this->creatingFirstTxtSection();
 		$this->creatingSecondTxtSection();
 		$this->creatingThirdTxtSection();
@@ -17,35 +19,40 @@ class Line6{
 		$this->creatingLine6();
 	}
 	
+	private function creatingNotice(){
+		$nt = '<div id="ln6-notice" class="ln-notice">';
+		$nt .= '<div id="ln6-ntc-firstGeometryFigure" class="ln-ntc-firstGeometryFigure"></div>';
+		$nt .= '<div id="ln6-ntc-secondGeometryFigure" class="ln-ntc-secondGeometryFigure"></div>';
+		$nt .= '<span>NUMBER 1 IN EUROPE</span>';
+		$nt .= '</div>';
+		self::$notice = $nt;
+	}
+	
 	private function creatingFirstTxtSection(){
-		$notice = '<div id="ln6-1stSecNotice">';
-		$notice .= '<div id="ln6-1stSecNtc-firstGeometryFigure"></div>';
-		$notice .= '<div id="ln6-1stSecNtc-secondGeometryFigure"></div>';
-		$notice .= '<span>NUMBER 1 IN EUROPE</span>';
-		$notice .= '</div>';
 		$logo = '<div id="ln6-1stSecLogo"><span><img src="img/casino.intense.png" /></span></div>';
 		$firstArrow = '<div id="ln6-1stSec-firstArrow"></div>';
 		$secondArrow = '<div id="ln6-1stSec-secondArrowContainer">';
 		$secondArrow .= '<div id="ln6-1stSec-secondTopArrow"></div>';
 		$secondArrow .= '<div id="ln6-1stSec-secondBottomArrow"></div>';
 		$secondArrow .= '</div>';
-		self::$firstTxtSection = '<div id="ln6-firstTxtSection">'.$notice.$logo.$firstArrow.$secondArrow.'</div>';
+		self::$firstTxtSection = '<div id="ln6-firstTxtSection">'.$logo.$firstArrow.$secondArrow.'</div>';
 	}
 	
 	private function creatingSecondTxtSection(){
-		$txtLines = '<div id="ln6-2ndSecLinesWrapper">';
-		$txtLines .= '<div><span>200% Up to</span></div>';
-		$txtLines .= '<div id="ln6-2ndSecAmount"><span>€3000</span></div>';
+		$txtLines = '<div id="ln6-2ndSecLinesWrapper" class="ln-2ndSecLinesWrapper">';
+		$txtLines .= '<div id="ln6-2ndSecFirstRow" class="ln-2ndSecFirstRow"><span>Intense</span></div>';
+		$txtLines .= '<div id="ln6-2ndSecSecondRow" class="ln-2ndSecSecondRow"><span>200% Up to</span></div>';
+		$txtLines .= '<div id="ln6-2ndSecAmount" class="ln-2ndSecAmount"><span>€3000</span></div>';
 		$txtLines .= '<div><span>+ 30 FREE SPINS</span></div>';
 		$txtLines .= '</div>';
-		self::$secondTxtSection = '<div id="ln6-secondTxtSection">'.$txtLines.'</div>';
+		self::$secondTxtSection = '<div id="ln6-secondTxtSection" class="ln-secondTxtSection">'.$txtLines.'</div>';
 	}
 	
 	private function creatingThirdTxtSection(){
-		$txtLines = '<div id="ln6-3rdSecLinesWrapper">';
-		$txtLines .= '<div id="ln6-3rdSecLines">';
-		$txtLines .= '<div><span>Rating (1975)</span></div>';
-		$txtLines .= '<div id="ln6-3rdSecStarsWrapper">';
+		$txtLines = '<div id="ln6-3rdSecLinesWrapper" class="ln-3rdSecLinesWrapper">';
+		$txtLines .= '<div id="ln6-3rdSecLines" class="ln-3rdSecLines">';
+		$txtLines .= '<div id="ln6-3rdSecRating" class="ln-3rdSecRating"><span>Rating (1975)</span></div>';
+		$txtLines .= '<div id="ln6-3rdSecStarsWrapper" class="ln-3rdSecStarsWrapper">';
 		$txtLines .= '<span><img src="img/star.png" /></span>';
 		$txtLines .= '<span><img src="img/star.png" /></span>';
 		$txtLines .= '<span><img src="img/star.png" /></span>';
@@ -54,7 +61,7 @@ class Line6{
 		$txtLines .= '</div>';
 		$txtLines .= '</div>';
 		$txtLines .= '</div>';
-		self::$thirdTxtSection = '<div id="ln6-thirdTxtSection">'.$txtLines.'</div>';
+		self::$thirdTxtSection = '<div id="ln6-thirdTxtSection" class="ln-thirdTxtSection">'.$txtLines.'</div>';
 	}
 	
 	private function creatingFourthTxtSection(){
@@ -63,12 +70,13 @@ class Line6{
 	}
 	
 	private function creatingFifthTxtSection(){
-		$txtLine = '<div id="ln6-5thSecInputWrapper"><input id="ln6-5thSecInput" class="ln-5thSecInput" type="button" value="Play" /></div>';
-		self::$fifthTxtSection = '<div id="ln6-fifthTxtSection">'.$txtLine.'</div>';
+		$txtLine = '<div id="ln6-5thSecInputWrapper" class="ln-5thSecInputWrapper"><input id="ln6-5thSecInput" class="ln-5thSecInput" type="button" value="Play" /></div>';
+		self::$fifthTxtSection = '<div id="ln6-fifthTxtSection" class="ln-fifthTxtSection">'.$txtLine.'</div>';
 	}
 	
 	private function creatingLine6(){
-		$cont = '<div id="line6">';
+		$cont = '<div id="line6" class="line">';
+		$cont .= self::$notice;
 		$cont .= self::$firstTxtSection;
 		$cont .= self::$secondTxtSection;
 		$cont .= self::$thirdTxtSection;
