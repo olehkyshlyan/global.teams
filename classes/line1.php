@@ -17,7 +17,7 @@ class Line1{
 	}
 	
 	private function creatingElement1(){
-		$cont = '<div id="line1">';
+		$cont = '<div id="line1" class="line">';
 		$cont .= self::$line1Logo;
 		$cont .= '</div>';
 		self::$content = $cont;
