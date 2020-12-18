@@ -1,8 +1,6 @@
 #line7
 {
 	position: relative;
-	width: 1000px;
-	height: 80px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
@@ -21,6 +19,28 @@
 	background-color: rgb(0,178,174);
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
+}
+
+@media (max-width: 980px){
+	#ln7-firstTxtSection
+	{
+		width: 30%;
+		overflow: hidden;
+	}
+	
+	#ln7-firstTxtSection:after
+	{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		content: '';
+		border-radius: 100%;
+		width: 200px;
+		height: 200px;
+		box-shadow: 0px 0px 0px 100px rgb(255,255,240);  /* color Ivory */
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	}
 }
 
 #ln7-1stSecLogo
@@ -42,59 +62,6 @@
 	-ms-transform: translate(-50%, -50%);
 }
 
-#ln7-1stSecNotice
-{
-	position: absolute;
-	z-index: 1;
-	height: 20px;
-	left: -10px;
-	top: -10px;
-	padding-left: 15px;
-	padding-right: 15px;
-	font-size: 10px;
-	font-weight: bold;
-	background-color: rgb(0,255,0); /* color Green */
-}
-
-#ln7-1stSecNotice:before
-{
-	content: '\200B';
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-}
-
-#ln7-1stSecNotice span
-{
-	vertical-align: middle;
-}
-
-#ln7-1stSecNtc-firstGeometryFigure
-{
-	position: absolute;
-	z-index: 0;
-	left: 0px;
-	top: 20px;
-	width: 0;
-	height:0;
-	border-top: 0px solid transparent;
-	border-right: 10px solid rgb(191,99,0);
-	border-bottom: 10px solid transparent;
-}
-
-#ln7-1stSecNtc-secondGeometryFigure
-{
-	position: absolute;
-	top: 0px;
-	right: -10px;
-	width: 0;
-	height: 0;
-	border-right: 10px solid transparent;
-	border-top: 10px solid rgb(0,255,0); /* color Green */
-	border-left: 0px solid rgb(0,255,0); /* color Green */
-	border-bottom: 10px solid rgb(0,255,0); /* color Green */
-}
-
 #ln7-1stSec-firstArrow
 {
 	position: absolute;
@@ -107,6 +74,13 @@
 	border-bottom: 40px solid transparent;
 }
 
+@media (max-width: 980px){
+	#ln7-1stSec-firstArrow
+	{
+		display: none;
+	}
+}
+
 #ln7-1stSec-secondArrowContainer
 {
 	position: absolute;
@@ -116,6 +90,13 @@
 	height: 100%;
 	width: 30px;
 	overflow: hidden;
+}
+
+@media (max-width: 980px){
+	#ln7-1stSec-secondArrowContainer
+	{
+		display: none;
+	}
 }
 
 #ln7-1stSec-secondTopArrow
@@ -140,94 +121,6 @@
 	border-right: 5px solid rgb(0,178,174);
 	border-radius: 2px;
 	transform: rotate(14deg);
-}
-
-#ln7-secondTxtSection
-{
-	display: inline-block;
-	width: 25%;
-	height: 100%;
-	text-align: center;
-	vertical-align: middle;
-}
-
-#ln7-secondTxtSection:before
-{
-	content: '\200B';
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-}
-
-#ln7-2ndSecLinesWrapper
-{
-	display: inline-block;
-	vertical-align: middle;
-}
-
-#ln7-2ndSecAmount
-{
-	margin-top: 1px;
-	font-size: 20px;
-	font-weight: bold;
-}
-
-#ln7-2ndSecAmount + div
-{
-	margin-top: 1px;
-}
-
-#ln7-thirdTxtSection
-{
-	display: inline-block;
-	width: 20%;
-	height: 100%;
-	text-align: center;
-	vertical-align: middle;
-}
-
-#ln7-thirdTxtSection:before
-{
-	content: '\200B';
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-}
-
-#ln7-3rdSecLinesWrapper
-{
-	display: inline-block;
-	width: 100%;
-	height: 80%;
-	border-left: 1px solid rgb(232,232,232);
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	vertical-align: middle;
-}
-
-#ln7-3rdSecLinesWrapper:before
-{
-	content: '\200B';
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-}
-
-#ln7-3rdSecLines
-{
-	display: inline-block;
-	vertical-align: middle;
-}
-
-#ln7-3rdSecStarsWrapper
-{
-	margin-top: 5px;
-}
-
-#ln7-3rdSecStarsWrapper span:not(:first-child)
-{
-	margin-left: 2px;
 }
 
 #ln7-fourthTxtSection
@@ -269,50 +162,9 @@
 	vertical-align: middle;
 }
 
-#ln7-fifthTxtSection
-{
-	display: inline-block;
-	width: 20%;
-	height: 100%;
-	text-align: center;
-	vertical-align: middle;
-}
-
-#ln7-fifthTxtSection:before
-{
-	content: '\200B';
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-}
-
-#ln7-5thSecInputWrapper
-{
-	display: inline-block;
-	width: 100%;
-	height: 80%;
-	border-left: 1px solid rgb(232,232,232);
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	vertical-align: middle;
-}
-
-#ln7-5thSecInputWrapper:before
-{
-	content: '\200B';
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-}
-
-#ln7-5thSecInputWrapper input
-{
-	width: 100px;
-	height: 30px;
-	color: rgb(255,255,240);  /* color Ivory */
-	background-color: rgb(0,219,0); /* color Green */
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
+@media (max-width: 980px){
+	#ln7-fourthTxtSection
+	{
+		display: none;
+	}
 }
